@@ -11,6 +11,7 @@ In Kotlin, collections are used to store and manipulate groups of objects or dat
 * Arrays – Fixed-size collections of elements with a specific type.
 * Sequences – Lazily evaluated collections of elements that can be processed in a pipeline.
 
+With arrayList we can increase or decrease the size of an array as pre requisites. It also provide read and write functionalities.
 ### Types of Collection
 In Kotlin collections are categorized into two forms.
 
@@ -28,5 +29,5 @@ It means that it supports only read-only functionalities and can not be modified
 It supports both read and write functionalities. Mutable collections and their corresponding methods are:
 
 * List – mutableListOf(),arrayListOf() and ArrayList
-* Set – mutableSetOf(), hashSetOf()
+* Set  – mutableSetOf(), hashSetOf()
 * Map – mutableMapOf(), hashMapOf() and HashMap
