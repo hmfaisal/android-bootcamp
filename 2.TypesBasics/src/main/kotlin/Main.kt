@@ -49,8 +49,24 @@ fun main() {
     var numberFish = 5 //changeable
     val numberBoats = 2 //unchangeable
     numberFish = 8
-
     println("I have $numberBoats boats and $numberFish fishes")
+
+    //Null
+    /* We can not assign null directly to variable.
+    The below line does not work
+    var myNullText: String = null;
+     */
+
+    var myNullText: String? = "Alex"
+    //If variable not null then print the length
+    println(myNullText?.length)
+    //If we really want to get the null pointer exception we can do the following
+    //If variable is null output exception, if not null show length
+    println(myNullText!!.length)
+    var fishFoodTreats = 6
+    //if fishFoodTreats is not null, decrement and use it;
+    //If fishFoodTreats is null, use the value after the ?:, which is 0. evaluation is stopped, and the dec() method is not called.
+    fishFoodTreats = fishFoodTreats?.dec() ?: 0
 
 
 
