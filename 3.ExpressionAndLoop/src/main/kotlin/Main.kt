@@ -36,6 +36,18 @@ fun main() {
         number++
     }
 
+    var x = 100
+    outer@ while ( x < 105 ){
+        x++
+        println("outer $x")
+        var y = 0
+        while ( y < 5){
+            if ( y == 0) break@outer
+            y++
+            println ("inner $y")
+        }
+    }
+
     //do-while loop
     var number2 = 40
     do{
